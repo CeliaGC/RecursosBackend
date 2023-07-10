@@ -1,0 +1,4 @@
+-Instalar Visual Studio Community 2022
+-Ver las imágenes para saber qué preferencias mínimas debe incluirse.
+-En caso de necesitar agregar o quitar preferencias, también se puede hacer después de instalarse en cualquier momento,
+aunque recomiendo instalarlo inicialmente ya con todo lo necesario.

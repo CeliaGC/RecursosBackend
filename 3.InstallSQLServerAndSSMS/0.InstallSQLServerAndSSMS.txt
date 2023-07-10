@@ -1,0 +1,2 @@
+-link de instalación https://www.microsoft.com/es-es/sql-server/sql-server-downloads
+-no modificar las rutas de instalación pre determinadas
