@@ -1,13 +1,21 @@
-﻿using Entities.Entities;
+﻿using Data;
+using Entities.Entities;
 using WebApplication1.IServices;
+
 
 namespace WebApplication1.Services
 {
-    public class ProductService : IProductService
+    public class ProductService : BaseContextLogic, IProductService
     {
+        public ProductService(ServiceContext serviceContext) : base(serviceContext)
+        {
+        }
+
         public int insertProduct(ProductItem productItem)
         {
-            throw new NotImplementedException();
+            _serviceContext.Products.Add(productItem);
+            _serviceContext.SaveChanges();
+            return productItem.Id;
         }
     }
 }

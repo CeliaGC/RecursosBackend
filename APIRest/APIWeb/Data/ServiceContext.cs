@@ -14,7 +14,7 @@ namespace Data
     public class ServiceContext : DbContext
     {
         public ServiceContext(DbContextOptions<ServiceContext> options) : base(options) { }
-        public DbSet<ProductItem> Images { get; set; }
+        public DbSet<ProductItem> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

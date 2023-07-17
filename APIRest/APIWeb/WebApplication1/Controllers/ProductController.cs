@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using System.Security.Authentication;
 using System.Web.Http.Cors;
+using WebApplication1.IServices;
 
 namespace WebApplication1.Controllers
 {
@@ -27,7 +28,7 @@ namespace WebApplication1.Controllers
         public int Post([FromBody] ProductItem imageItem)
         {
            
-                return _productService.InsertProduct(imageItem);
+                return _productService.insertProduct(imageItem);
         }
 
        
