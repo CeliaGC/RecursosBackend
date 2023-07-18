@@ -5,7 +5,7 @@ using WebApplication1.IServices;
 
 namespace WebApplication1.Services
 {
-    public class ProductService : BaseContextLogic, IProductService
+    public class ProductService : BaseContextService, IProductService
     {
         public ProductService(ServiceContext serviceContext) : base(serviceContext)
         {
@@ -17,5 +17,12 @@ namespace WebApplication1.Services
             _serviceContext.SaveChanges();
             return productItem.Id;
         }
+
+        //public int insertProduct(ProductItem productItem)
+        //{
+        //    _serviceContext.Products.Add(productItem);
+        //    _serviceContext.SaveChanges();
+        //    return productItem.Id;
+        //}
     }
 }
