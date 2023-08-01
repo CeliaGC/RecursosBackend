@@ -1,7 +1,7 @@
 ﻿insert into Products
-(productName)
+(productName )
 VALUES
-('Lápices de colores'),
-('Carpeta')
+('Cartulina'),
+('Pegamento')
 
 select * from Products
